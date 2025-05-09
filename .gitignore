@@ -1,0 +1,27 @@
+# Ignore uploaded files
+uploads/*
+!uploads/.gitkeep
+
+# Ignore system files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore PHP error logs
+error_log
+php_errors.log
+
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Keep data directory structure but ignore its contents
+data/*
+!data/.gitkeep
+!data/projects.json
