@@ -1,82 +1,82 @@
-# نظام إدارة المشاريع بدون قاعدة بيانات
+# Project Management System without Database
 
-![لقطة من النظام](screenshots/preview.png)
+![System Preview](screenshots/preview.png)
 
-نظام متكامل لإدارة المشاريع يعمل بدون الحاجة إلى قاعدة بيانات تقليدية، حيث يعتمد على تخزين البيانات في ملفات JSON والصور في نظام الملفات مباشرة.
+A comprehensive project management system that operates without a traditional database, using JSON files for data storage and a file system for image management.
 
-## المميزات الرئيسية
+## Key Features
 
-- واجهة مستخدم جذابة وسهلة الاستخدام
-- إمكانية إضافة وتعديل وحذف المشاريع بسهولة
-- عرض المشاريع بطريقة جذابة مع صور توضيحية
-- إدارة الملفات بشكل تلقائي (حذف الصور عند حذف المشروع)
-- تصميم متجاوب يعمل على جميع الأجهزة
-- دعم كامل للغة العربية وواجهة RTL
+- Attractive and user-friendly Arabic RTL interface
+- Easy project creation, editing, and deletion
+- Visually appealing project display with images
+- Automatic file management (images deleted when projects are removed)
+- Responsive design that works on all devices
+- Full support for Arabic language and RTL interface
 
-## التقنيات المستخدمة
+## Technologies Used
 
-- **PHP** لبناء الوظائف الأساسية والتعامل مع الملفات
-- **Bootstrap 5 RTL** لتصميم واجهة المستخدم
-- **JSON** لتخزين البيانات بدلاً من قواعد البيانات التقليدية
-- **Animate.css** لإضافة تأثيرات حركية جذابة
-- **Bootstrap Icons** لإضافة أيقونات عصرية
-- **JavaScript** لتحسين تجربة المستخدم
+- **PHP** for core functionality and file handling
+- **Bootstrap 5 RTL** for UI design
+- **JSON** for data storage instead of traditional databases
+- **Animate.css** for engaging animations
+- **Bootstrap Icons** for modern iconography
+- **JavaScript** for enhanced user experience
 
-## لماذا بدون قاعدة بيانات؟
+## Why Database-Free?
 
-- سهولة النشر والتثبيت (لا حاجة لإعداد قاعدة بيانات)
-- أداء سريع للمشاريع الصغيرة والمتوسطة
-- سهولة النقل والنسخ الاحتياطي
-- مناسب للمواقع البسيطة والتطبيقات الصغيرة
+- Easy deployment (no database setup required)
+- Fast performance for small to medium projects
+- Simple migration and backup
+- Perfect for lightweight applications
 
-## متطلبات التشغيل
+## Requirements
 
-- PHP 7.4 أو أحدث
-- خادم ويب (Apache, Nginx, etc.)
+- PHP 7.4 or higher
+- Web server (Apache, Nginx, etc.)
 
-## طريقة التثبيت
+## Installation
 
-1. قم بتنزيل أو استنساخ المستودع
-2. ضع الملفات في مجلد الخادم الخاص بك
-3. تأكد من أن المجلدات `uploads` و `data` قابلة للكتابة
-4. قم بزيارة الموقع من خلال المتصفح
+1. Download or clone the repository
+2. Place the files in your server directory
+3. Make sure the `uploads` and `data` directories are writable
+4. Visit the site through your browser
 
 ```bash
-# استنساخ المستودع
-git clone https://github.com/yourusername/project-management-system.git
+# Clone the repository
+git clone https://github.com/bakr21/project-management-system.git
 
-# الانتقال إلى مجلد المشروع
+# Navigate to the project directory
 cd project-management-system
 
-# تعيين صلاحيات الكتابة للمجلدات
+# Set write permissions for directories
 chmod 777 uploads data
 ```
 
-## هيكل المشروع
+## Project Structure
 
 ```
-├── controller/           # ملفات التحكم
-├── data/                 # ملفات البيانات (JSON)
-├── helper/               # الدوال المساعدة
-├── inc/                  # ملفات الهيدر والفوتر
-├── uploads/              # مجلد الصور المرفوعة
-├── create.php            # صفحة إنشاء مشروع جديد
-├── edit.php              # صفحة تعديل المشروع
-├── index.php             # الصفحة الرئيسية
-└── README.md             # ملف التوثيق
+├── controller/           # Controller files
+├── data/                 # Data files (JSON)
+├── helper/               # Helper functions
+├── inc/                  # Header and footer files
+├── uploads/              # Uploaded images directory
+├── create.php            # Create new project page
+├── edit.php              # Edit project page
+├── index.php             # Home page
+└── README.md             # Documentation file
 ```
 
-## الاستخدام
+## Usage
 
-1. الصفحة الرئيسية: عرض جميع المشاريع
-2. إضافة مشروع: انقر على زر "إضافة مشروع جديد"
-3. تعديل مشروع: انقر على زر "تعديل" بجوار المشروع
-4. حذف مشروع: انقر على زر "حذف" بجوار المشروع (سيتم حذف الصورة تلقائيًا)
+1. Home page: View all projects
+2. Add project: Click on "Add New Project" button
+3. Edit project: Click on "Edit" button next to the project
+4. Delete project: Click on "Delete" button next to the project (image will be automatically deleted)
 
-## المساهمة
+## Contributing
 
-نرحب بمساهماتكم! يرجى إرسال طلب سحب أو فتح مشكلة لمناقشة التغييرات المقترحة.
+Contributions are welcome! Please send a pull request or open an issue to discuss proposed changes.
 
-## الترخيص
+## License
 
-هذا المشروع مرخص بموجب [MIT License](LICENSE).
+This project is licensed under the [MIT License](LICENSE).
